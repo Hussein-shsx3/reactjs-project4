@@ -1,0 +1,76 @@
+#Gall {
+  position: relative;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 8px;
+}
+#gallary_image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: black;
+}
+#Gall img{
+  width: 100%;
+  transition: transform 0.3s;
+}
+#Gall:hover #gallary_image{
+  opacity: 0.5;
+}
+#Gall:hover img {
+  transform: scale(1.1);
+}
+
+#Gall__1 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Gall__1 h3{
+  color: #fac031;
+  font-size: 26px;
+  font-family: cursive;
+  margin-bottom: 30px;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+#Gall__1 p{
+  opacity: 0;
+  width: 90%;
+  color: white;
+  margin-bottom: 40px;
+  transition: all 0.4s;
+}
+
+#Gall:hover #Gall__1 p,#Gall:hover #Gall__1 h3{
+  opacity: 1;
+}
+
+#Gall button{
+  padding: 1em 3em;
+  margin: 0px;
+  opacity: 0;
+  transform: translateY(90px);
+  transition: all 0.4s;
+}
+
+#Gall:hover button{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+@media(max-width:753px) {
+  #Gall {
+    width: 90%;
+    margin: 15px 0px;
+  }
+}

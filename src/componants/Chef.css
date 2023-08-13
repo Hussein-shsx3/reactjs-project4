@@ -1,0 +1,91 @@
+#Chef {
+  position: relative;
+  width: 22%;
+  height: 330px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 5px 3px rgb(190, 189, 189);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+  margin: 0px 15px;
+}
+
+#Chef_img {
+  width: 80%;
+  height: 270px;
+  border-radius: 100%;
+  background: url(../../public/img/chef1.png) no-repeat center center / cover;
+  transition: all 0.4s;
+}
+#Chef__1 {
+  position: absolute;
+  bottom: 20px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.4s;
+}
+#Chef__1 h2{
+  color: #fac031;
+  margin-bottom: 15px;
+}
+#Chef #Chef__1 .Social_link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#Chef #Chef__1 .Social_link a {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-top: 10px;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+#Chef #Chef__1 .Social_link a:hover{
+  color: #fac031;
+}
+
+#Chef:hover{
+  border-radius: 30px;
+}
+
+#Chef:hover #Chef_img {
+  transform: translateY(-130px);
+  border-radius: 30px;
+  background: url(../../public/img/chef1.png) no-repeat center center / cover;
+}
+
+#Chef:hover #Chef__1 {
+  opacity: 1;
+  bottom: 20px;
+}
+
+@media(max-width:753px) {
+  #Chef {
+    position: relative;
+    width: 90%;
+    height: 330px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px 3px rgb(190, 189, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+    margin: 55px 15px;
+  }
+  
+}

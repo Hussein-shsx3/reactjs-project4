@@ -1,0 +1,159 @@
+header {
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgb(149, 149, 149);
+  background-color: white;
+  z-index: 100;
+}
+
+header img {
+  margin-left: 5%;
+  width: 100px;
+}
+
+#res {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  width: 55%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  color: rgb(70, 69, 69);
+}
+header ul li a::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #fac031;
+  display: block;
+  transition: 0.2s linear;
+}
+
+header ul li a:hover::after{
+  width: 100%;
+}
+header ul li a:hover {
+  color: #fac031;
+}
+
+#icons {
+  font-size: 18px;
+  margin-right: 4%;
+}
+
+.fa-user,
+.fa-heart,
+.fa-cart-shopping {
+  margin-right: 12px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  color: rgb(52, 51, 51);
+}
+
+.fa-user:hover,
+.fa-heart:hover,
+.fa-cart-shopping:hover {
+  color: #fac031;
+}
+
+#bar {
+  transform: translateX(-100%);
+  font-size: 20px;
+  position: absolute;
+}
+
+.fa-xmark {
+  display: none;
+  position: absolute;
+  color: rgb(63, 61, 61);
+  font-size: 20px;
+  top: 15px;
+  left: 15px;
+}
+
+.fa-xmark:hover,
+#bar {
+  color: #fac031;
+}
+
+@media(min-width:754px) and (max-width:1200px) {
+  #res {
+    width: 65%;
+  }
+
+  header ul {
+    width: 70%;
+  }
+}
+
+@media(max-width:753px) {
+  #res {
+    position: absolute;
+    top: 20px;
+    right: -300px;
+    width: 180px;
+    height: 43vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e6e5e4;
+    transition-duration: 1s;
+    border-radius: 20px;
+  }
+
+  #res:hover {
+    box-shadow: 0px 0px 10px #fac031;
+  }
+
+  header ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header ul li {
+    margin-bottom: 17px;
+  }
+
+  #icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+  }
+
+  #res.act {
+    right: 15px;
+  }
+
+
+
+  .fa-xmark {
+    display: flex;
+  }
+
+  #bar {
+    position: absolute;
+    right: 5%;
+    transition-duration: 1s;
+  }
+
+}

@@ -1,0 +1,120 @@
+#Product {
+  position: relative;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px 2px rgb(225, 224, 224);
+  text-align: center;
+  margin: 20px 20px;
+  overflow: hidden;
+}
+
+#Product img {
+  margin: 10px 0px;
+  width: 94%;
+  transition: transform 0.3s;
+}
+
+#Product:hover img {
+  transform: scale(1.1);
+}
+
+#Product h3 {
+  color: #fac031;
+  margin: 0px 0px 10px 0px;
+  font-size: 22px;
+}
+
+#Product h4 {
+  margin: 10px 0px;
+  font-size: 18px;
+}
+
+#Product p {
+  width: 95%;
+}
+
+
+#Product button,
+#Gall button,form button {
+  --primary-color: black;
+  --secondary-color: #fff;
+  --hover-color: #fac031;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 3.8em;
+  height: 40px;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.4s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+#Product button .arrow-wrapper,
+#Gall button .arrow-wrapper,form button .arrow-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Product button .arrow ,
+#Gall button .arrow,form button .arrow{
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.4s;
+}
+
+#Product button .arrow::before ,
+#Gall button .arrow::before,form button .arrow::before{
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.4s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+#Product button:hover ,
+#Gall button:hover,form button:hover {
+  background-color: var(--hover-color);
+}
+
+#Product button:hover .arrow ,
+#Gall button:hover .arrow,form button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+#Product button:hover .arrow:before ,
+#Gall button:hover .arrow:before,form button:hover .arrow:before {
+  right: 0;
+}
+
+#Product .fa-heart {
+  position: absolute;
+  font-size: 22px;
+  color: white;
+  top: 30px;
+  right: -50px;
+  transition: all 0.5s;
+}
+
+#Product:hover .fa-heart {
+  right: 15px;
+}

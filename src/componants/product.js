@@ -22,11 +22,11 @@ const Product = (props) => {
       </Box>
       <button>
         Order Now
-        <div class="arrow-wrapper">
-          <div class="arrow"></div>
+        <div className="arrow-wrapper">
+          <div className="arrow"></div>
         </div>
       </button>
-      <i class="fa-solid fa-heart"></i>
+      <i className="fa-solid fa-heart"></i>
     </div>
   );
 };

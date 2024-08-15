@@ -13,8 +13,8 @@ const Gall = (props) => {
         </p>
         <button>
           Order Now
-          <div class="arrow-wrapper">
-            <div class="arrow"></div>
+          <div className="arrow-wrapper">
+            <div className="arrow"></div>
           </div>
         </button>
       </div>

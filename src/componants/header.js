@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./header.css";
 const Header = () => {
   function m() {
@@ -37,11 +36,11 @@ const Header = () => {
           </li>
         </ul>
         <div id="icons">
-          <i class="fa-solid fa-heart"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
-          <i class="fa-solid fa-user"></i>
+          <i className="fa-solid fa-heart"></i>
+          <i className="fa-solid fa-cart-shopping"></i>
+          <i className="fa-solid fa-user"></i>
         </div>
-        <i class="fa-solid fa-xmark" onClick={c}></i>
+        <i className="fa-solid fa-xmark" onClick={c}></i>
       </div>
       <i id="bar" className="fas fa-outdent" onClick={m}></i>
     </header>

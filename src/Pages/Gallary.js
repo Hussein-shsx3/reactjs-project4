@@ -1,10 +1,14 @@
+
 import React from "react";
 import Gall from "../componants/gall";
 const Gallary = () => {
+  function b (){
+    console.log("click");
+  }
   return (
     <div id="Gallary">
       <h1>
-        Our <span>Gallary</span>
+        Our <span onClick={b}>Gallary</span>
       </h1>
       <div id="Gallary__1">
         <Gall img="./img/gallary_1.jpg"/>

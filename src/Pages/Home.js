@@ -18,11 +18,11 @@ const Home = () => {
           quo sunt esse tempore inventore vel voluptate, amet laudantium
           adipisci veniam nihil quam molestiae omnis mollitia.
         </p>
-        <button class="learn-more">
-          <span class="circle" aria-hidden="true">
-            <span class="icon arrow"></span>
+        <button className="learn-more">
+          <span className="circle" aria-hidden="true">
+            <span className="icon arrow"></span>
           </span>
-          <span class="button-text">Order Now</span>
+          <span className="button-text">Order Now</span>
         </button>
       </div>
       <img src="./img/main_img.png" alt="" />
